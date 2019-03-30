@@ -1,0 +1,4 @@
+src/
+pkg/
+nutsh/
+*.pkg.tar.gz
