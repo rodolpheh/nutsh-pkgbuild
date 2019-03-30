@@ -2,7 +2,7 @@
 
 pkgname='nutsh'
 pkgdesc='A nutty shell'
-pkgver=r52.ef75a7a
+pkgver=r58.9532db5
 pkgrel=1
 epoch=
 arch=('i686' 'x86_64')
@@ -18,7 +18,7 @@ conflicts=()
 replaces=()
 backup=()
 options=()
-#install="$pkgname.install"
+install="$pkgname.install"
 changelog=
 source=("$pkgname"::'git+https://github.com/remicmacs/nutsh.git')
 noextract=()

@@ -1,0 +1,11 @@
+post_install() {
+	grep -qe '^/usr/bin/nutsh$' etc/shells || echo '/usr/bin/nutsh' >> etc/shells
+}
+
+post_upgrade() {
+	post_install
+}
+
+pre_remove() {
+	sed -i -r '/^\/usr\/bin\/nutsh$/d' etc/shells
+}
